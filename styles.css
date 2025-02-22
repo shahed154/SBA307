@@ -1,0 +1,162 @@
+/* Main Container (EVERYTHING) */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(230, 230, 230, 0.419);
+
+}
+
+/* PROFILE CONTAINER  */
+
+.profile-container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+}
+
+.profile {
+    align-items: center;
+    gap: 10px;
+    flex: 2;
+    /*  */
+
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile-information {
+    align-items: center;
+    width: 100%;
+    text-align: right;
+    flex: 1;
+    align-content: center;
+    /*  */
+    color: gray;
+}
+
+.h1,
+h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.h4,
+h5,
+p {
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+/* Objective  Text */
+
+.objective {
+    flex: 1;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 100%;
+    margin: 10px auto;
+
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+
+}
+
+
+/* Work History/ Education history / Skills  */
+
+.qualification-container {
+    display: flex;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-section {
+    flex: 2;
+    padding: 10px;
+}
+
+
+/* SKILL PROGRESS BAR */
+
+.skills-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    min-width: 100px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.skill {
+    background-color: #2c3e50;
+    ;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 20px;
+
+}
+
+.progress-bar {
+
+    background-color: rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+.html {
+    width: 30%;
+}
+
+.css {
+    width: 20%;
+}
+
+.javascript {
+    width: 10%;
+}
+
+
+@media (max-width: 480px) {
+
+    .profile-container,
+    .qualification-container {
+        flex-direction: column;
+        margin: 1em;
+        align-content: center;
+
+    }
+
+    .profile-information {
+        text-align: left;
+    }
+}
